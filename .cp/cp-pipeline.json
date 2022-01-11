@@ -20,7 +20,7 @@
       "context": {
         "resources": {
           "url": "https://gitlab.eng.vmware.com/api/v4/projects/76399/repository/archive.tar?sha=9bbb0716d22ed0cb37e3985a25e42c8209ef0f49&private_token=p8VKirPPUsb9-TxyghTf",
-          "path": "/examples/wordpress"
+          "path": "/examples/wordprress"
         },
         "application": {
           "kind": "HELM",
