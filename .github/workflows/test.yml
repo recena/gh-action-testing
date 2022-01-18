@@ -18,4 +18,4 @@ jobs:
         with:
           path: '/'
           config: '.cp'
-          pipeline: 'cp-pipeline.json'
+          pipeline: 'cp-prueba.json'
