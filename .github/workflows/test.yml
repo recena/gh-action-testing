@@ -17,5 +17,5 @@ jobs:
       - uses: vmware-labs/vmware-image-builder-action@retries-intervals
         with:
           path: '/'
-          config: '.cp'
-          pipeline: 'cp-prueba.json'
+          config: '.vib'
+          pipeline: 'vib-pipeline.json'
