@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vmware-samples/vmware-image-builder-examples/vib-action@main
+      - uses: vmware-labs/vmware-image-builder-action@retries-intervals
         with:
           path: '/'
           config: '.cp'
