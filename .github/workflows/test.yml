@@ -7,7 +7,7 @@ on: # rebuild any PRs and main branch changes
 env:
   CSP_API_URL: https://console.cloud.vmware.com
   CSP_API_TOKEN: ${{ secrets.CSP_API_TOKEN }}
-  VIB_PUBLIC_URL: https://cp.bromelia.vmware.com
+  VIB_PUBLIC_URL: https://cp.brome3234lia.vmware.com
 
 jobs:
   test-action: # make sure build/ci work properly
@@ -19,3 +19,5 @@ jobs:
           path: '/'
           config: '.vib'
           pipeline: 'vib-pipeline.json'
+          retry-count: 5
+          backoff-intervals: '[100, 500, 1000, 2000, 5000]'
