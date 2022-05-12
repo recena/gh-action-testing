@@ -1,0 +1,27 @@
+{
+  "phases": {
+    "package": {
+      "context": {
+        "resources": {
+          "url": "https://github.com/bitnami/charts/tarball/1bc9cb647ff60b2cf294cdd81a8ae29b32cd8703",
+          "path": "/bitnami/wordpress"
+        }
+      },
+      "actions": [
+        {
+          "action_id": "helm-lint"
+        }
+      ]
+    },
+      "actions": [
+        {
+          "action_id": "trivy",
+          "params": {
+            "threshold": "CRITICAL",
+            "vuln_type": ["OS"]
+          }
+        }
+      ]
+    }
+  }
+}
