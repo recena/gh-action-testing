@@ -20,4 +20,4 @@ jobs:
           config: '.vib'
           pipeline: 'vib-pipeline.json'
           retry-count: 5
-          backoff-intervals: '[100, 500, 1000, 2000, 5000]'
+          backoff-intervals: '[100, 500, 1000, 2000]'
