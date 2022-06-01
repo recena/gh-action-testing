@@ -7,14 +7,14 @@ on: # rebuild any PRs and main branch changes
 env:
   CSP_API_URL: https://console.cloud.vmware.com
   CSP_API_TOKEN: ${{ secrets.CSP_API_TOKEN }}
-  VIB_PUBLIC_URL: https://testcontentplatform.free.beeceptor.com
+  VIB_PUBLIC_URL: "https://cp.bromelia.vmware.com"
 
 jobs:
   test-action: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vmware-labs/vmware-image-builder-action@retries-intervals
+      - uses: vmware-labs/vmware-image-builder-action@only-upload-on-failure
         with:
           path: '/'
           config: '.vib'
