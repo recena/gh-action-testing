@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vmware-labs/vmware-image-builder-action@only-upload-on-failure
+      - uses: vmware-labs/vmware-image-builder-action@passed-field
         with:
           path: '/'
           config: '.vib'
