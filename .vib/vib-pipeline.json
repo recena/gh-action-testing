@@ -96,21 +96,6 @@
           }
         }
       ]
-    },
-    "publish": {
-      "actions": [
-        {
-          "action_id": "helm-publish",
-          "params": {
-            "repository": {
-              "kind": "OCI",
-              "url": "oci://harbor-repo.vmware.com/vib-crontab",
-              "username": "robot$vib-crontab+crontab-pipelines-rw",
-              "password": "NF7de3Va5hQeRQUUR1uXjawa5Lx8Efdl"
-            }
-          }
-        }
-      ]
     }
   }
 }
