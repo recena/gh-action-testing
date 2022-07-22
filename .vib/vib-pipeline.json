@@ -33,13 +33,6 @@
           }
         },
         {
-          "action_id": "grype",
-          "params": {
-            "threshold": "CRITICAL",
-            "package_type": ["OS"]
-          }
-        },
-        {
           "action_id": "health-check",
           "params": {
             "app_protocol": "HTTP",
