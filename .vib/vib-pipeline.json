@@ -31,6 +31,13 @@
             "threshold": "CRITICAL",
             "vuln_type": ["OS"]
           }
+        },
+        {
+          "action_id": "grype",
+          "params": {
+            "threshold": "CRITICAL",
+            "vuln_tryo": ["OS"]
+          }
         }
       ]
     }
